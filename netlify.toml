@@ -1,0 +1,11 @@
+# Netlify: builds the page (node build.mjs) and publishes dist/.
+# The Deploy to Netlify button asks for BOARD while it sets the site up.
+[build]
+  command = "node build.mjs"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[template.environment]
+  BOARD = "Your Are.na board: its slug or its address"

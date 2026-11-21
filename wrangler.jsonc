@@ -1,0 +1,9 @@
+// Cloudflare: a Worker that only serves the built page (dist/).
+// `wrangler deploy` runs the build first; Workers Builds runs that on every push.
+// Set BOARD (and, if you like, ARENA_TOKEN as a secret) under Settings → Build → Variables and secrets.
+{
+  "name": "my-open-edition",
+  "compatibility_date": "2026-11-01",
+  "build": { "command": "node build.mjs" },
+  "assets": { "directory": "./dist" }
+}

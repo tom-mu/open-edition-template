@@ -1,0 +1,7 @@
+dist/
+node_modules/
+.wrangler/
+.netlify/
+.env
+.dev.vars
+.DS_Store
